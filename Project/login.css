@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #121517;
+    transition: 0.5s;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    line-height: 1.63;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    margin: 0;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* margin-bottom: 100px; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 95px;
+
+}
+
+
+.header__nav ul {
+    list-style: none; /* list-style: none; Убирает точки */
+    margin: 0; /* Убирает отступы */
+    display: flex; /* Размещает элементы в одну строку */
+    font-size: 19px;
+}
+
+.header {
+    padding: 50px 0;
+}
+
+.header__nav li {
+    margin-right: 95px; /* Расстояние между пунктами меню */
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 37px;
+    letter-spacing: -0.03em;
+}
+
+.text-gradient {
+    background: linear-gradient(223deg, #237249 0%, #35c66b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+a {
+    color: #D9D9D9;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+body.active {
+    background-color: #444242;
+}
+
+
+
+.form__container {
+    width: 800px;
+    height: 500px;
+    /* outline: solid; */
+    padding: 40px 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    margin-top: 100px;
+}
+
+
+.block {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow:  0 5px 45px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.block-item {
+    text-align: center;
+}
+
+.block__item {
+    width: 50%;
+}
+
+.block-item__title {
+    /* font-size: 1.2rem; */
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.block-item__btn {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #fff;
+    color:  #333;
+    /* font-size: 16px; */
+    font-weight: 500px;
+}
+
+.form-box {
+    background-color: #fff;
+    background: linear-gradient(210deg, #237249 0%, #35c66b 100%);
+    height: 100%;
+    width: 50%;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-box.active .form__signin {
+    left: -100%;
+        transition-delay: 0s;
+}
+
+.form-box.active .form__signup {
+    left: 0;
+        transition-delay: 0.25s;
+}
+
+.form-box.active {
+    left: 50%;
+}
+
+.form {
+    width: 100%;
+    padding: 50px;
+    /* font-size: 16px; */
+    position: absolute;
+    transition: 0.5s;
+}
+
+.form__signin {
+    left: 0;
+    transition-delay: 0.25s;
+}
+
+.form__signup {
+    left: 100%;
+        transition-delay: 0s;
+}
+
+.form__title {
+    /* font-size: 1.5rem;  */
+    font-weight: 800;
+    color: #333;
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #333;
+    font-size: inherit;
+}
+
+.form__btn {
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    background-color: #03a9f4;
+    color: #fff;
+    padding: 10px 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.signin-btn, .signup-btn {
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 50px;
+}
+
+.form__forgot {
+    color: #333;
+}
+
+.form__btn--signup {
+    background-color: #f43648;
+    /* стиль кнопки из индекса */
+        /* padding: 20px 80px;
+    border-radius: 83px;
+    background: linear-gradient(210deg, #237249 0%, #35c66b 100%);
+    font-weight: 639;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    color: #fff; */
+}
+
+.fotm__input {
+    width: 100%;
+    height: 30px;
+}
