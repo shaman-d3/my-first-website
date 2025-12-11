@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Логотип">
+                ШГС
+            </a>
+            <nav class="header__nav">
+                <a href="#!" class="header__link">Главная</a>
+                <a href="#works" class="header__link">Работы</a>
+                <a href="#contacts" class="header__link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="welcome">
+            <div class="container">
+                <div class="welcome__desc">
+                    <h1 class="welcome__tilte">
+                        Привет! Я начинающий Веб-Разработчик.
+                    </h1>
+                    <p class="welcome__text">
+                        Хочу создавать функциональные и удобные веб-интефейсы, применяя знания по HTML, CSS и PHP. В
+                        моем портфолио - проекты, выполненные в рамках курса по веб-разработке.
+                    </p>
+                    <a class="btn welcome__btn" href="mailto:shamanD3@gmai.com">shamanD3@gmail.com</a>
+                </div>
+                <img src="images/me.jpg" alt="фото автора портфолио" class="welcome__img">
+            </div>
+        </section>
+
+        <section id="works" class="works">
+            <div class="container">
+                <button class="works__btn" type="button">
+                    <img class="works__icon" src="/images/arrow.svg" alt="">
+                    Мои работы
+                </button>
+                <div class="works__wrapper">
+                    <a href="https://urlaboratory.ru/" target="_blank" class="work">
+                        <img class="work__img" src="images/work1.jpg" alt="Проект1">
+                        <span class="work__name">Лаба 0-1.<span class="work__method"> Made on tilda</span></span>
+                    </a>
+                    <a href="./labs/Lab_1/index_1.html" class="work">
+                        <img class="work__img" src="./images/work2.jpg" alt="Проект2">
+                        <span class="work__name">Лаба 1.<span class="work__method">Первые строки HTML</span></span>
+                    </a>
+                    <a href="./labs/Lab_2/index_2.html" class="work">
+                        <img class="work__img" src="./images/work3.jpg" alt="Проект3">
+                        <span class="work__name">Лаба 2.<span class="work__method">Строки HTML+CSS пример</span></span>
+                    </a>
+                    <a href="./labs/Lab_3/index_3.html" class="work">
+                        <img class="work__img" src="./labs/Lab_3/img/2025-12-01 19-57-09 Bootstrap · The most popular HTML, CSS, and JS library in the world., группа Вкладки окна  — Яндекс Бра.jpg" alt="Проект4">
+                        <span class="work__name">Лаба 3.<span class="work__method">Элементы Bootstrap</span></span>
+                    </a>
+                    <a href="./labs/Lab_4/index_4.html" class="work">
+                        <img class="work__img" src="./images/work4.jpg" alt="Проект4">
+                        <span class="work__name">Лаба 4.<span class="work__method">Ковыряние шаблонов</span></span>
+                    </a>
+                    <a href="./Project/SB_index.html" class="work">
+                        <img class="work__img" src="./Project/images/signboard.jpg" alt="Мой проект">
+                        <span class="work__name">Проект.<span class="work__method">Потому что люблю Кофе</span></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contact">
+            <div class="container">
+                <h2 class="title">Свяжитесь со мной</h2>
+                <p class="contact__text">Если вы ищете начинающего веб-разработчика для своего проекта, я открыт для
+                    предложений о сотрудничестве.</p>
+                <a class="btn contact__btn" href="mailto:shamanD3@gmai.com">shamanD3@gmail.com</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copy">Made by <span>Gregory Shajmanov</span> - 2025</p>
+            <div class="socials">
+                <a href="https://t.me/shaman_greg" class="socials__link" target="_blank">
+                    <img class="socials__img" src="images/tg.svg" alt="">
+                </a>
+                <a href="https://wa.me/79125802084" class="socials__link" target="_blank">
+                    <img class="socials__img" src="images/wa.svg" alt="">
+                </a>
+                <a href="https://vk.com/shaymanov" class="socials__link" target="_blank">
+                    <img class="socials__img" src="images/vk.svg" alt="">
+                </a>
+
+
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/Lab_4/js/scrollIt.js"></script>
+    <script src="/Lab_4/js/jquery.scrollUp.min.js"></script>
+
+
+</body>
+
+</html>
